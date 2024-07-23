@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    font-size: 13px;
+    --color: #eee;
+    color: var(--color);
+    background-color: #23282E;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    text-align: center;
+    padding-top: 10px;
+}
+header nav a{
+    margin: 0 30px;
+    color: var(--color);
+    font-size: small;
+}
+
+.tab{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-image: url(images/bg.png);
+    background-size: 50%;
+}
+.tab .container{
+    width: 1140px;
+    max-width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    box-sizing: border-box;
+    margin: auto;
+    position: relative;
+}
+#intro{
+    background-color: #16222D;
+}
+#intro .avatar{
+    text-align: right;
+    height: 100%;
+}
+#intro .avatar img{
+    height: 100%;
+    filter: saturate(0.5);
+}
+#intro .content{
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+    width: 500px;
+    max-width: 80%;
+}
+#intro .content .name,
+#intro .content .job{
+    font-size: 6em;
+    font-weight: bold;
+    font-family: 'Righteous', sans-serif;
+    line-height: 1em;
+}
+.text-gradient{
+    background-image: linear-gradient(
+        to right, #1e0e74, #1e7fac
+    );
+    display: inline-block;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+#intro .content .des{
+    margin-top: 1.2em;
+    width: 70%;
+}
+#intro .content .des a{
+    margin-top: 1.2em;
+}
+#intro .content i{
+    font-size: 10em;
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    color: #293b4c;
+}
