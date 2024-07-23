@@ -319,7 +319,7 @@ header nav a{
         margin: 10px;
     }
     #intro .avatar img{
-        transform: translateX(-50px);
+        transform: translateX(-60px);
     }
     #intro .content{
         left: 20px;
